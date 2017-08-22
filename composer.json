@@ -1,0 +1,48 @@
+{
+  "name": "francescotrucchia/broadway-extensions-bundle",
+  "description": "Symfony bundle for francescotrucchia/broadway-extensions.",
+  "keywords": ["cqrs", "event sourcing", "domain-driven design", "ddd"],
+  "homepage": "https://github.com/francescotrucchia/broadway-extensions-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Francesco Trucchia",
+      "email": "francesco@trucchia.it",
+      "homepage": "http://www.francescotrucchia.it"
+    },
+    {
+      "name": "soisy.it",
+      "email": "info@soisy.it",
+      "homepage": "http://www.soisy.it"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@github.com:francescotrucchia/broadway-extensions.git"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "broadway/broadway": "^1.0",
+    "symfony/console": "^2.3|^3.0",
+    "symfony/http-kernel": "^2.3|^3.0",
+    "francescotrucchia/broadway-extensions": "dev-master"
+  },
+  "require-dev": {
+    "instaclick/base-test-bundle": "~0.5",
+    "phpunit/phpunit": "^4.8",
+    "matthiasnoback/symfony-config-test": "^2.0",
+    "matthiasnoback/symfony-dependency-injection-test": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "BroadwayExtensions\\Bundle\\BroadwayExtensionsBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BroadwayExtensions\\Bundle\\BroadwayExtensionsBundle\\": "test/"
+    }
+  }
+}
